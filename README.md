@@ -1,4 +1,4 @@
-# Jobsips
+# JobHunt
 
 #### Track your Job Search 
 
