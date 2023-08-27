@@ -14,10 +14,10 @@ const BigSidebar = () => {
                         <Logo />
                     </header>
                     <NavLinks />
+                </div>
                 <footer className='footer'>
                     <p>&copy; {year} Job Hunt</p>
                 </footer>
-                </div>
             </div>
         </Wrapper>
     )
