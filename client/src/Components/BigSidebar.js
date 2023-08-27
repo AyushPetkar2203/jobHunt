@@ -15,11 +15,15 @@ const BigSidebar = () => {
                     </header>
                     <NavLinks />
                 </div>
-                <footer className='footer'>
-                    <p>&copy; {year} Job Hunt</p>
+                
+                <footer style={{
+                    position: 'absolute', bottom: 0, width: '100%', height: '60px', paddingLeft:'40px'
+                }}>
+                <p>&copy; {year} Job Hunt</p>
                 </footer>
+                {/* <p>Text for footer check</p> */}
             </div>
-        </Wrapper>
+        </Wrapper >
     )
 }
 export default BigSidebar

@@ -31,13 +31,6 @@ const Wrapper = styled.aside`
       display: flex;
       flex-direction: column;
     }
-    .footer{
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      height: 60px;   /* Height of the footer */
-      left:30px
-    }
     .nav-link {
       display: flex;
       align-items: center;
