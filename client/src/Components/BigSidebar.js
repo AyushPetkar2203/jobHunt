@@ -5,7 +5,7 @@ import Logo from './Logo'
 
 const BigSidebar = () => {
     const { showSidebar } = useAppContext()
-   
+    const year = new Date().getFullYear()
     return (
         <Wrapper>
             <div className={showSidebar ? 'sidebar-container' : 'sidebar-container show-sidebar'}>
@@ -15,8 +15,11 @@ const BigSidebar = () => {
                     </header>
                     <NavLinks />
                 </div>
-                
-                
+                <footer style={{
+                    position: 'fixed', bottom: 0, width: '100%', height: '60px', paddingLeft:'40px'
+                }}>
+                <p>&copy; {year} Job Hunt</p>
+                </footer>
             </div>
         </Wrapper >
     )
