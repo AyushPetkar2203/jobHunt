@@ -33,14 +33,14 @@ const deleteJob = async (req, res) => {
 }
 
 const updateJob = async (req, res) => {
-    await checkUser(req.user)
+    
     const { id: jobId } = req.params
     const { company, position } = req.body
     if (!company || !position) {
         throw new BadRequestError('Please provide all values')
     }
 
-    const job = await Job.findOneAndUpdate({ _id: jobId })
+    const job = await Job.findOne({ _id: jobId })
 
     if (!job) {
         throw new NotFoundError(`No job with id: ${jobId}`)
